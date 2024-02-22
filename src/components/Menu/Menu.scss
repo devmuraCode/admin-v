@@ -1,0 +1,11 @@
+.ant-menu {
+    &-item {
+      margin: 0 !important;
+  
+      &-icon {
+        display: flex !important;
+        justify-content: center !important;
+        margin: 0 auto !important;
+      }
+    }
+  }

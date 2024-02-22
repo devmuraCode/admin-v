@@ -1,0 +1,53 @@
+.wrapper {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 120%;
+    color: var(--content-white);
+    border-radius: var(--border-radius-4);
+    user-select: none;
+    white-space: nowrap;
+  
+    &--variant {
+      &-ACTIVE,
+      &-ENLIGHTENMENT {
+        background-color: var(--background-blue);
+      }
+  
+      &-INACTIVE,
+      &-DELETED {
+        background-color: var(--background-red);
+      }
+  
+      &-INFO,
+      &-ARTICLE,
+      &-ADMIN_CABINET {
+        background-color: var(--background-green);
+      }
+  
+      &-NEW,
+      &-CLIENT_CABINET {
+        background-color: var(--background-yellow);
+      }
+  
+      &-VISIT {
+        background-color: var(--background-orange);
+      }
+    }
+  
+    &--size {
+      &-sm {
+        padding: 2px 6px;
+        font-size: 11px;
+      }
+  
+      &-md {
+        padding: 4px 12px;
+      }
+  
+      &-lg {
+        padding: 8px 24px;
+      }
+    }
+  }
+  

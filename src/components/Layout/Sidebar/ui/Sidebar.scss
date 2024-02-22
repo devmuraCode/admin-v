@@ -1,0 +1,27 @@
+.ant-layout-sider {
+    .ant-menu-inline-collapsed {
+      .ant-menu-item {
+        padding: 0 10px;
+      }
+  
+      .ant-menu-item-icon {
+        height: 100%;
+        margin: 0 auto;
+      }
+    }
+  }
+  
+  .ant-tooltip {
+    &-placement-right {
+      padding-left: 5px;
+    }
+  
+    &-inner {
+      padding: 5px 10px !important;
+      background-color: var(--background-blue);
+    }
+  
+    &-arrow-content {
+      --antd-arrow-background-color: var(--background-blue);
+    }
+  }

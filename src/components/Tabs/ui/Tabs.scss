@@ -1,0 +1,26 @@
+.ant-tabs {
+    &-nav {
+      margin-bottom: 24px !important;
+  
+      &::before {
+        border-bottom: none !important;
+      }
+    }
+  
+    &-card {
+  
+    }
+  
+    &-tab {
+      border: none !important;
+      border-radius: var(--border-radius-4) var(--border-radius-4) 0 0 !important;
+  
+      &-active {
+        background-color: var(--background-blue) !important;
+      }
+  
+      &-active &-btn {
+        color: var(--content-white) !important;
+      }
+    }
+  }

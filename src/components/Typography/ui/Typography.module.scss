@@ -1,0 +1,45 @@
+.wrapper {
+    display: block;
+    font-weight: var(--weight);
+    font-size: var(--size);
+    letter-spacing: var(--spacing);
+  
+    &--variant {
+      &-primary {
+        color: var(--content-primary);
+      }
+  
+      &-secondary {
+        color: var(--content-secondary);
+      }
+  
+      &-tertiary {
+        color: var(--content-tertiary);
+      }
+    }
+  
+    &--type {
+      &-default {
+        text-transform: none;
+      }
+  
+      &-uppercase {
+        text-transform: uppercase;
+      }
+    }
+  
+    &--align {
+      &-left {
+        text-align: left;
+      }
+  
+      &-center {
+        text-align: center;
+      }
+  
+      &-right {
+        text-align: right;
+      }
+    }
+  }
+  

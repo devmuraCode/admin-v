@@ -1,0 +1,34 @@
+.ant-select-tree-title {
+    display: block;
+    height: 36px !important;
+    min-height: 36px !important;
+    line-height: 36px !important;
+  }
+  
+  .ant-select-tree-treenode {
+    border-radius: var(--border-radius-4) !important;
+  }
+  
+  .ant-select-tree-treenode:hover,
+  .ant-select-tree-treenode-selected {
+    background-color: var(--background-blue) !important;
+    color: var(--content-white) !important;
+  }
+  
+  .ant-select-tree-switcher {
+    line-height: 36px !important;
+  }
+  
+  .ant-select-tree-node-content-wrapper {
+    transition: none !important;
+  }
+  
+  .ant-select-tree-node-content-wrapper:hover {
+    background-color: transparent !important;
+    color: var(--content-white) !important;
+  }
+  
+  .ant-select-tree-node-selected {
+    background-color: transparent !important;
+    color: var(--content-white) !important;
+  }

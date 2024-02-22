@@ -1,0 +1,134 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    padding: 8px 14px;
+    overflow-y: scroll;
+    background: var(--background-white);
+    border-radius: var(--border-radius-4);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    user-select: none;
+    will-change: transform;
+  
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  
+    &:hover {
+      transform: scale(1.05);
+    }
+  
+    &:active {
+      transform: scale(0.9995);
+    }
+  
+    &--active {
+      padding-right: 9px;
+      background-color: var(--status-blue);
+  
+      .title,
+      .value {
+        color: var(--content-white);
+      }
+    }
+  }
+  
+  .title {
+    color: var(--content-secondary);
+    font-size: 13px;
+    line-height: 140%;
+    transition: all 0.1s ease-in-out;
+  }
+  
+  .value {
+    margin-left: 4px;
+    color: var(--content-primary);
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 140%;
+    transition: all 0.1s ease-in-out;
+  }
+  
+  .clear {
+    width: 16px;
+    min-width: 16px;
+    height: 16px;
+    min-height: 16px;
+    margin-left: 4px;
+    color: var(--content-white);
+    cursor: pointer;
+  }
+  
+  .menu {
+    display: block;
+    padding: 4px 0;
+    background-color: var(--background-white);
+    overflow: hidden;
+  
+    &Item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 34px;
+      padding: 7px 12px;
+      cursor: pointer;
+      transition: all 0.15s ease-in-out;
+      user-select: none;
+  
+      &Active,
+      &:hover {
+        background-color: var(--background-blue);
+  
+        .menuItemTitle {
+          color: var(--content-white);
+        }
+      }
+  
+      &Title {
+        color: var(--content-primary);
+        font-size: 13px;
+        line-height: 140%;
+        transition: all 0.15s ease-in-out;
+      }
+  
+      &Icon {
+        width: 20px;
+        min-width: 20px;
+        height: 20px;
+        min-height: 20px;
+        margin-left: 12px;
+        color: var(--content-white);
+      }
+    }
+  }
+  
+  .button {
+    display: inline-flex;
+    align-items: center;
+    padding: 3px;
+    overflow: hidden;
+    background: var(--surface-z-4);
+    border-radius: var(--border-radius-4);
+  
+    &Item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      min-width: 50px;
+      height: 30px;
+      border-radius: var(--border-radius-4);
+      cursor: pointer;
+      transition: all 0.15s ease-in-out;
+      user-select: none;
+  
+      &Active {
+        background: var(--status-blue);
+  
+        svg {
+          color: var(--content-primary-alt);
+        }
+      }
+    }
+  }
+  

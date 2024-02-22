@@ -1,0 +1,121 @@
+.wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: var(--background-white);
+    border: 1px solid transparent;
+    border-radius: var(--border-radius-4);
+    box-shadow: var(--shadow-input);
+    transition: all 0.3s ease-in-out;
+  
+    &--size {
+      &-small {
+        height: 32px;
+        padding: 8px 12px;
+      }
+  
+      &-medium {
+        height: 40px;
+        padding: 12px;
+      }
+  
+      &-large {
+        height: 48px;
+        padding: 16px 12px;
+      }
+    }
+  
+    &--state {
+      &-success {
+        border-color: var(--status-green);
+      }
+  
+      &-error {
+        border-color: var(--border-red);
+      }
+    }
+  
+    input {
+      display: block;
+      width: 100%;
+      height: 23px;
+      margin: 0;
+      padding: 0;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 23px;
+      background: none;
+      color: var(--content-primary);
+      border: 0;
+  
+      &::placeholder {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 150%;
+        color: var(--content-tertiary);
+      }
+    }
+  
+    &:not(.wrapper--disabled):hover,
+    &:not(.wrapper--disabled).wrapper--focus {
+      border-color: var(--border-blue);
+      box-shadow: var(--shadow-input-focus);
+    }
+  
+    &--disabled {
+      background-color: var(--background-gray);
+      box-shadow: none;
+  
+      input,
+      .prefix,
+      .suffix,
+      .icon {
+        color: var(--content-tertiary);
+      }
+    }
+  }
+  
+  .prefix,
+  .suffix {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 23px;
+    color: var(--content-primary);
+    user-select: none;
+  }
+  
+  .prefix {
+    margin-right: 6px;
+  }
+  
+  .suffix {
+    margin-left: 6px;
+  }
+  
+  .icon {
+    max-width: 24px;
+    max-height: 24px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  
+    &Prefix {
+      margin-right: 8px;
+      color: var(--content-primary);
+    }
+  
+    &Suffix {
+      margin-left: 8px;
+      color: var(--content-primary);
+    }
+  }
+  
+  .validation {
+    position: absolute;
+    top: calc(100% + 3px);
+    left: 0;
+    display: block;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 150%;
+    color: var(--content-red);
+  }

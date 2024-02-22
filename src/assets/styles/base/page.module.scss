@@ -1,0 +1,43 @@
+.form {
+    display: block;
+ }
+ 
+ .content {
+    padding: 10px 20px;
+    background-color: var(--background-white);
+    border-radius: 12px;
+ }
+ 
+ .table {
+   display: block;
+ }
+ 
+ .pagination {
+   display: flex;
+   justify-content: flex-end;
+   padding: 12px;
+ }
+ 
+ .dropdown {
+   max-height: 400px;
+   overflow-y: scroll;
+ 
+   &::-webkit-scrollbar {
+     display: none;
+   }
+ }
+ 
+ .iconEyeShow {
+   width: 20px !important;
+   cursor: pointer;
+ 
+   &:hover {
+     color: var(--status-blue);
+   }
+ }
+ 
+ .button {
+   width: 100%;
+   text-align: center;
+ }
+ 

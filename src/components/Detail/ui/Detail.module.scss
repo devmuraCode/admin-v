@@ -1,0 +1,118 @@
+.list {
+    display: block;
+    width: 100%;
+  }
+  
+  .title {
+    width: 100%;
+    padding: 8px 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+  }
+  
+  .item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 12px 0;
+  
+    &--variant {
+      &-blue {
+        .itemTitle {
+          color: var(--content-blue);
+        }
+      }
+  
+      &-orange {
+        .itemTitle {
+          color: var(--content-orange);
+        }
+      }
+  
+      &-red {
+        .itemTitle {
+          color: var(--content-red);
+        }
+      }
+  
+      &-gray {
+        .itemTitle {
+          color: var(--content-gray);
+        }
+      }
+    }
+  
+    &Border {
+      &Top {
+        border-top: 1px solid var(--border-line);
+      }
+  
+      &Bottom {
+        border-bottom: 1px solid var(--border-line);
+      }
+    }
+  
+    &Title {
+      display: flex;
+      flex: auto;
+      flex-direction: column;
+      min-width: 30%;
+      padding-right: 8px;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 150%;
+      color: var(--content-secondary);
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+      -moz-hyphens: auto;
+      hyphens: auto;
+    }
+  
+    &Value {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      text-align: right;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 150%;
+      color: var(--content-secondary);
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+      -moz-hyphens: auto;
+      hyphens: auto;
+    }
+  
+    &--value-placeholder {
+      .itemValue {
+        color: var(--content-tertiary);
+      }
+    }
+  
+    &Icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      margin-left: 8px;
+      background-color: var(--background-blue);
+      border-radius: var(--border-radius-4);
+      cursor: pointer;
+  
+      &Inner {
+        width: 18px;
+        max-width: 18px;
+        height: 18px;
+        color: var(--content-blue);
+      }
+    }
+  }
+  

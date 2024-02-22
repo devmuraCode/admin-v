@@ -1,0 +1,29 @@
+.wrapper {
+    padding: 64px 0;
+    background-color: var(--background-white);
+  }
+  
+  .menu {
+    height: calc(100vh - 64px);
+    overflow-x: hidden;
+    overflow-y: auto;
+  
+    & {
+      scrollbar-width: auto;
+      scrollbar-color: #021a31 var(--border-white);
+    }
+  
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+  
+    &::-webkit-scrollbar-track {
+      background: var(--background-white);
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background-color: #052442;
+      border-radius: var(--border-radius-8);
+      border: 2px solid var(--border-white);
+    }
+  }
